@@ -19,6 +19,6 @@ public class Main {
 
 
         Passengers pers = new Passengers(name_plane, tank, distance, person);
-        pers.GetSeats();
+        pers.print();
     }
 }

@@ -11,10 +11,20 @@ public class Passengers extends Plane{
     }
     public Passengers(String name, double tank, double distance, int nam){
         num_seats = nam;
-        SetName(name);
-        SetTank(tank);
-        SetDistance(distance);
+        setName(name);
+        setTank(tank);
+        setDistance(distance);
     }
-    public void SetSeats(int seats){num_seats = seats;}
-    public void GetSeats(){ System.out.println(num_seats); }
+    public void setseats(int seats){num_seats = seats;}
+    public int getseats(){ return num_seats; }
+
+    @Override
+    public String toString() {
+        return super.toString()+getseats();
+    }
+
+    @Override
+    public void print(){
+        System.out.println(this.toString());
+    }
 }

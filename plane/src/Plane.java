@@ -15,13 +15,22 @@ public class Plane {
         max_distance = distance;
     }
 
-   public void SetName(String name){ name_plane = name; }
-   public void SetTank(double tank){ fuel_tank = tank; }
-   public void SetDistance(double distance){ max_distance = distance; }
+   public void setName(String name){ name_plane = name; }
+   public void setTank(double tank){ fuel_tank = tank; }
+   public void setDistance(double distance){ max_distance = distance; }
 
-   public void GetName(){ System.out.println( name_plane); }
-   public void GetTank(){ System.out.println(fuel_tank); }
-   public void GetDistance(){ System.out.println(max_distance); }
+   public String getname(){ return name_plane; }
+   public double gettank(){return fuel_tank;}
+   public double getdistanse(){ return max_distance; }
+
+
+    public String toString(){
+        return getname()+"\n"+gettank()+"\n"+getdistanse();
+    }
+    public void print(){
+        System.out.println(this.toString());
+    }
+
 
 
 }
